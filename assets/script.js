@@ -47,14 +47,14 @@ arrowRight.addEventListener("click", function () {
 
   updateDots();
 
-  console.log(position);
+  // console.log(position);
 
-  console.log("clickflèchedroite");
+  // console.log("clickflèchedroite");
 });
 
 const arrowLeft = document.querySelector(".arrow_left");
 arrowLeft.addEventListener("click", function () {
-  console.log("clicflèchegauche");
+  // console.log("clicflèchegauche");
   position = position - 1;
 
   if (position === -1)
@@ -64,7 +64,7 @@ arrowLeft.addEventListener("click", function () {
   tagline.innerHTML = currentSlide.tagLine;
   updateDots();
 
-  console.log(position);
+  // console.log(position);
 });
 
 //mise à jour du point sélectionné  dots
