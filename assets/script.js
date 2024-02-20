@@ -47,7 +47,6 @@ arrowRight.addEventListener("click", function () {
 
   updateDots();
 
-  
   console.log(position);
 
   console.log("clickflèchedroite");
@@ -58,10 +57,11 @@ arrowLeft.addEventListener("click", function () {
   console.log("clicflèchegauche");
   position = position - 1;
 
-  if (position === -1) [(position = slides.length - 1)];
+  if (position === -1)
+   [(position = slides.length - 1)];
   const currentSlide = slides[position];
   bannerImg.src = path + currentSlide.image;
-
+  tagline.innerHTML = currentSlide.tagLine;
   updateDots();
 
   console.log(position);
@@ -69,8 +69,8 @@ arrowLeft.addEventListener("click", function () {
 
 //mise à jour du point sélectionné  dots
 
-// pour chacun des dots dans la nodelist 
-// si index est égale à la position alors ajouter la classList css dot selected sinon suprrimer la class css 
+// pour chacun des dots dans la nodelist
+// si index est égale à la position alors ajouter la classList css dot selected sinon suprrimer la class css
 function updateDots() {
   dots.forEach((dot, index) => {
     if (index === position) {
